@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page | DiamondCut Motors</title>
+    <link rel="stylesheet" href="signin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@400&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="gambar">
+            <img src="LOGO ATAS.png" width="450px" alt="DiamondCut"/>
+        </div>
+        <ul>
+            <li>
+                <a href="home.html">HOME</a>
+            </li>
+            <li>
+                <a href="cars.html">CARS</a>
+            </li>
+            <li>
+                <a href="showroom.html">SHOWROOM</a>
+            </li>
+            <li>
+                <a href="aboutus.html">ABOUT US</a>
+            </li>
+            <li>
+                <a href="signin.html" class="signin"><img src="profile.png" class="signin" alt="signin"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Sign In</header>
+            <h1>DiamondCut Motors</h1>
+            <form action="#">
+                <input type="text" id="inputUsername" placeholder="Enter username">
+                <input type="text" id="inputEmail" placeholder="Enter email">
+                <input type="text" id="inputPhone" placeholder="Enter phone number">
+                <input type="password" id="inputPassword" placeholder="Enter password">
+                <input type="password" id="inputConfirmPassword" placeholder="Re-enter password">
+                <label id="agreementLabel" for="agreement">
+                    <input type="checkbox" id="agreement"> I agree to the terms and services
+                </label>
+                <button onclick="login()">Sign In</button>
+            </form>
+            <div id="redirectAlert" style="display:none;">
+                Redirecting to home page...
+            </div>
+        </div>
+    </div>
+    
+    <script src="signin.js"></script>
+</body>
+</html>

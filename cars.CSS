@@ -1,0 +1,315 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.signin {
+    width: 90px;
+    height: 90px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #a6a6a6;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+    padding: 5px 0;
+    transition: color 300ms, border-bottom 300ms;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-bottom: 1px solid cyan;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@font-face {
+    font-family: 'OPTAlpine';
+    src: url("D:\Tugas Binus\AOL HCI\Ignasius Holy Prasetya\OPTIAlpine-BoldItalic.otf") format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.partner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #575757, #e6f7ff);
+}
+
+.partner-title p {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partner-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: calc(1000px * 8);
+    animation: slide 30s infinite linear;
+}
+
+.slider img {
+    width: 800px;
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-520px * 8));
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 992px) {
+    .slider img {
+      width: 300px; 
+    }
+  }
+
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    .container .judul {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .slider img:nth-child(1),
+    .slider img:nth-child(2),
+    .slider img:nth-child(3),
+    .slider img:nth-child(6),
+    .slider img:nth-child(7) {
+        width: 55px;
+    }
+
+    .slider img:nth-child(4) {
+        margin-left: 15px;
+        width: 65px;
+    }
+
+    .slider img:nth-child(5) {
+        margin: 1px;
+        width: 70px;
+    }
+
+    .slider img:nth-child(8) {
+        margin: 0;
+        width: 100px;
+    }
+
+    .carcarrousel{
+        width: auto; 
+        height: auto;
+    }
+
+    .partner-slider {
+        overflow: hidden;
+        width: 100%;
+        direction: rtl; /* right to left */
+    }
+    
+    .slider {
+        display: flex;
+        flex-direction: row-reverse;
+        animation: scroll-left 80s linear infinite;
+    }
+    
+    .carcarrousel {
+        width: 150px;
+        height: auto;
+        margin: 0 10px;
+    }
+    
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+      
+
+    
+@media screen and (min-width: 670px) and (max-width: 992px) {
+    .gambar img {
+        width: 500px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    .container .judul {
+        font-size: 22px;
+        height: 30px;
+    }
+
+    .image-container img {
+        width: 160px;
+    }
+
+    .car-name {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .slider img:nth-child(1) {
+        margin-left: 30px;
+        width: 100px;
+    }
+
+    .slider img:nth-child(2) {
+        margin-left: 15px;
+        width: 100px;
+    }
+
+    .slider img:nth-child(3),
+    .slider img:nth-child(6),
+    .slider img:nth-child(7) {
+        width: 100px;
+    }
+
+    .slider img:nth-child(4) {
+        margin-left: 25px;
+        width: 120px;
+    }
+
+    .slider img:nth-child(5) {
+        margin-left: 20px;
+        width: 130px;
+    }
+
+    .slider img:nth-child(8) {
+        margin: 0;
+        width: 180px;
+    }
+}
+
+.catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'OPTAlpine', sans-serif;
+    background: #fff;
+    text-align: center;
+}
+
+.car-container {
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    background: #c8ecec;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.car-caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+}
+
+.footer {
+    background: #00ECFA;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.footer p {
+    margin: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.footer .copyright {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer .rights {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}

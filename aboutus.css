@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.847);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.signin {
+    width: 90px;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(166, 166, 166);
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+    padding: 5px 0;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-bottom: 1px solid cyan;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: cyan;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+@font-face {
+    font-family: 'Nico Moji';
+    src: url("D:\Tugas Binus\AOL HCI\Ignasius Holy Prasetya\NicoMoji-Regular.ttf") format('truetype');
+}
+
+.title {
+    font-size: 32px;
+    color: cyan;
+    margin-bottom: 10px;
+    font-family: 'Nico Moji', sans-serif;
+}
+
+.description {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: 'Gupter', sans-serif;
+}
+
+
+.contact {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 2rem;
+    font-family: 'Nico Moji', sans-serif;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+    border-radius: 20%;
+    transition: transform 0.5s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color:#00ECFA; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+}
+
+.footer p {
+    margin: 5px; 
+    font-size: 20px; 
+    color: #000000; 
+}
+
+.footer .copyright {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer .rights {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
+
+
+.footer {
+    background-color: #00ECFA; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer p {
+    margin: 5px; 
+}
+
+.footer .copyright {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer .rights {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
